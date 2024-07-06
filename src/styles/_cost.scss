@@ -1,0 +1,502 @@
+
+.cost {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/cost1.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 780px;
+
+    &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 40, 40, 0.85);
+    }
+
+    &__text {
+        position: relative;
+         font-size: 70px;
+         color: white;
+         font-family: "Montserrat", sans-serif;
+         font-weight: 400;
+         margin-bottom: 40px;
+         padding: 20px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between; /* Разделение пространства между элементами */
+        align-items: flex-start;
+        position: relative;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 25px; 
+    }
+
+    &__description {
+        width: 75%;
+    }
+
+    &__subtitle1 {
+        color: white;
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        padding: 20px;
+    }
+
+    &__subtitle {
+        color: white;
+        padding: 50px 30px;
+        font-size: 23px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 200;
+    }
+    &__subtitle2 {
+        margin-top: 20px;
+    }
+
+    &__content {
+        &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            height: 1px; 
+            background-color: #ffffff; 
+        } 
+    }
+
+    &__price {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        position: relative;
+        background: rgb(255, 255, 255);
+        border-radius: 6%;
+        padding: 110px 30px;
+    }
+    &__price-text {
+        font-size: 40px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 40px;
+    }
+    &__price-button {
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 12px 20px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+@media (max-width: 1200px){
+    .cost {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/cost1.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 780px;
+    
+        &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(44, 40, 40, 0.85);
+        }
+    
+        &__text {
+            position: relative;
+             font-size: 60px;
+             color: white;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-bottom: 40px;
+             padding: 20px;
+             max-width: 1000px;
+        }
+    
+        &__container {
+            display: flex;
+            justify-content: space-between; /* Разделение пространства между элементами */
+            align-items: flex-start;
+            position: relative;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 30px; 
+            max-width: 950px;
+        }
+    
+        &__description {
+            width: 75%;
+        }
+    
+        &__subtitle1 {
+            color: white;
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            padding: 20px;
+        }
+    
+        &__subtitle {
+            color: white;
+            padding: 50px 30px;
+            font-size: 23px;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 200;
+        }
+        &__subtitle2 {
+            margin-top: 20px;
+        }
+    
+        &__content {
+            &:after {
+                content: '';
+                display: block;
+                width:100%;
+                height: 1px; 
+                background-color: #ffffff; 
+            } 
+        }
+    
+        &__price {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            position: relative;
+            background: rgb(255, 255, 255);
+            border-radius: 25px;
+            padding: 110px 30px;
+        }
+        &__price-text {
+            font-size: 40px;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 40px;
+        }
+        &__price-button {
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 12px 20px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+.cost {
+    &__text {
+        position: relative;
+         font-size: 50px;
+         color: white;
+         font-family: "Montserrat", sans-serif;
+         font-weight: 400;
+         margin-bottom: 20px;
+         width: 750px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between; /* Разделение пространства между элементами */
+        align-items: flex-start;
+        position: relative;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 25px; 
+        max-width: 90%;
+    }
+
+    &__description {
+        width: 75%;
+    }
+
+    &__subtitle1 {
+        color: white;
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        padding: 20px;
+    }
+    &__content {
+
+        &:after {
+            content: '';
+            display: block;
+            width: 700px;
+            height: 1px; 
+            background-color: #ffffff; 
+        } 
+    }
+    &__subtitle {
+        color: white;
+        padding: 50px 30px;
+        font-size: 23px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 200;
+    }
+    &__subtitle2 {
+        margin-top: 20px;
+    }
+
+    &__price {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        position: relative;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 150px 40px;
+    }
+    &__price-text {
+        font-size: 40px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 40px;
+    }
+    &__price-button {
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 12px 20px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+}
+
+@media (max-width: 770px) {
+    .cost {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/cost1.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 850px;
+
+        &__text {
+            position: relative;
+             font-size: 50px;
+             color: white;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-bottom: 50px;
+             width: 600px;
+        }
+    
+        &__container {
+            display: block;
+            justify-content: center; /* Разделение пространства между элементами */
+            align-items: flex-start;
+            position: relative;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 25px; 
+            width: 600px;
+    
+        }
+    
+        &__description {
+            width: 100%;
+        }
+    
+        &__subtitle1 {
+            color: white;
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            padding: 20px;
+        }
+
+        &__content {
+            &:after {
+                content: '';
+                display: block;
+                width: 600px;
+                height: 1px; 
+                background-color: #ffffff; 
+            } 
+        }
+        &__subtitle {
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 200;
+        }
+
+        &__subtitle2 {
+            margin-top: 20px;
+        }
+    
+        &__price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 30px 40px;
+        }
+        &__price-text {
+            font-size: 35px;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 0px;
+        }
+        &__price-button {
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 20px 25px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+    
+}
+    
+@media (max-width: 480px) {
+.cost {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/cost1.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+
+    &__text {
+        position: relative;
+        font-size: 36px;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 360px;
+    }
+    
+    &__container {
+        display: block;
+        justify-content: center; /* Разделение пространства между элементами */
+        align-items: flex-start;
+        position: relative;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 15px; 
+        width: 360px;
+    }
+    
+    &__description {
+        width: 100%;
+    }
+    
+    &__subtitle1 {
+        color: white;
+        font-size: 22px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        padding: 20px;
+    }
+
+    &__content {
+        &:after {
+            content: '';
+            display: block;
+            width: 360px;
+            height: 1px; 
+            background-color: #ffffff; 
+        } 
+    }
+    &__subtitle {
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 200;
+    }
+
+    &__subtitle2 {
+        margin-top: 20px;
+    }
+    
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 20px 30px;
+    }
+    &__price-text {
+        font-size: 22px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 0px;
+    }
+    &__price-button {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 10px 15px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    }
+    
+}

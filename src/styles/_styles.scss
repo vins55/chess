@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    font-size: 50px;
+    font-family: "Montserrat" sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(44, 40, 40, 1);
+}
+
+.description {
+    color: rgba(44, 40, 40, 1);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+
+}
+
+.button {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(44, 40, 40, 0.9);
+    padding: 25px 40px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    z-index: 999; /* Поверх всех элементов, кроме модального окна */
+}
+
+@media (max-width: 1200px) {
+    .button {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 20px 35px;
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 1024px;
+        width: 100%;        
+        margin: 0 auto;
+    }
+    
+    .container1 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .description {
+        color: rgba(44, 40, 40, 1);
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .title {
+        font-size: 50px;
+        font-family: "Montserrat" sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(44, 40, 40, 1);
+    }
+    .button {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 20px 30px;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .img111 {
+        display: block;
+        width: 90%;
+        margin: 0;
+        height: auto;
+        position: absolute;
+        top: -28vh;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        max-width: 770px;
+        width: 100%;        
+        margin: 0 auto;
+    }
+    
+    .container1 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .description {
+        color: rgba(44, 40, 40, 1);
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .title {
+        font-size: 50px;
+        font-family: "Montserrat" sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(44, 40, 40, 1);
+    }
+    .button {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 15px 20px;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .img111 {
+        display: block;
+        width: 90%;
+        margin: 0;
+        height: auto;
+        position: absolute;
+        top: -28vh;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 480px;
+        width: 100%;        
+        margin: 0 auto;
+    }
+    
+    .container1 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .description {
+        color: rgba(44, 40, 40, 1);
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .title {
+        font-size: 36px;
+        font-family: "Montserrat" sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(44, 40, 40, 1);
+    }
+    .button {
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 10px 15px;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+}

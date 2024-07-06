@@ -1,0 +1,307 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+    z-index: 10; 
+    background: rgba(0, 0, 0, 0.219); 
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        &__item {
+            padding: 25px 0;
+            position: relative;
+            &:hover::before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: calc(100% + 40px);
+                height: 5px;
+                background-color: #fff;
+                transform: translateX(-20px);
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    
+    .open {
+        display: flex !important;
+    }
+
+    .burger {
+        display: none; 
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px;
+        height: 30px;
+
+        &__span {
+            height: 2px;
+            width: 100%;
+            transform: scale(1);
+            background-color: #fff;
+        }
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            transform: all 0.7% ease 0s;
+        }
+        &::before { top: 0 }
+        &::after { bottom: 0 }
+
+        &.active span { transform: scale(0) }
+
+        &.active::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0, -50%)
+        }
+
+        &.active::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0, 50%)
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.219);
+
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 10px;
+        }
+
+        &__item {
+            padding: 25px 0;
+            position: relative;
+            &:hover::before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: calc(100% + 40px);
+                height: 5px;
+                background-color: #fff;
+                transform: translateX(-20px);
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    }
+}
+
+@media (max-width: 770px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        border-bottom: none;
+        z-index: 10; 
+        border-bottom: 2px;
+        background-color: rgba(0, 0, 0, 0.445); 
+
+        &__burger-menu {
+            height: 0px;
+        }
+
+    .burger {
+        display: flex;
+        top: 15px;
+
+        &__span {
+            width: 78%;
+        }
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            align-items: center;
+            height: 2px;
+            width: 80%;
+            margin-right: 4px;
+            background-color: #fff;
+            transform: all 0.7% ease 0s;
+        }
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        top: 0; 
+        bottom: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 90px 20px;
+        background-color: rgb(44, 40, 40);
+        animation: burgerAnimation 0.4s;
+        
+        
+
+        &__list {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &__item {
+            padding: 5px 0;
+            
+            position: relative;
+            &:hover::before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: calc(100% + 40px);
+                height: 5px;
+                background-color: #fff;
+                transform: translateX(-20px);
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            display: grid;
+            align-items: end;
+        }
+
+        @keyframes burgerAnimation {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+    }
+
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        border-bottom: none;
+        z-index: 10; 
+        border-bottom: 2px;
+        background-color: rgba(0, 0, 0, 0.445); 
+
+        &__burger-menu {
+            height: 0px;
+        }
+
+    .burger {
+        display: flex;
+
+
+        &__span {
+            width: 78%;
+        }
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            align-items: center;
+            height: 2px;
+            width: 80%;
+            margin-right: 4px;
+            background-color: #fff;
+            transform: all 0.7% ease 0s;
+        }
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        top: 0; 
+        bottom: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 20px;
+        background-color: rgb(44, 40, 40);
+        animation: burgerAnimation 0.4s;
+        
+
+        &__list {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &__item {
+            padding: 5px 0;
+            
+            position: relative;
+            &:hover::before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: calc(100% + 40px);
+                height: 5px;
+                background-color: #fff;
+                transform: translateX(-20px);
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+            display: grid;
+            align-items: end;
+        }
+
+        @keyframes burgerAnimation {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+    }
+
+    }
+}

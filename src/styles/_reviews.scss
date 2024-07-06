@@ -1,0 +1,87 @@
+
+.reviews {
+    background-color: rgb(224, 222, 222);
+    padding-top: 60px;
+    padding-bottom: 100px;
+    
+
+    &__text {
+        font-size: 60px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-align: end;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__swiper {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .reviews {
+        background-color: rgb(224, 222, 222);
+        padding-top: 60px;
+        padding-bottom: 100px;
+    
+        &__text {
+            font-size: 50px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            text-align: end;
+            width: 90%;
+            margin-bottom: 50px;
+        }
+    
+        &__img {
+            display: flex;
+            max-width: 900px;
+            align-items: center;
+        }
+    
+        &__swiper {
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 992px) {
+.reviews {
+    background-color: rgb(224, 222, 222);
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__text {
+        font-size: 60px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-align: end;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__swiper {
+        display: block;
+        width: 340px;
+        height: 250px;
+        margin-top: 10%;
+    }
+    &__swiper-slide img {
+        width: 375px;
+        height: 250px;
+    }
+
+    }
+
+}
+

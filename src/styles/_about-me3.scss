@@ -1,0 +1,188 @@
+.about-me3 {
+    padding-top: 95px;
+    padding-bottom: 95px;
+
+    &__title {
+        font-size: 28px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        line-height: 1.5;
+        color: rgba(44, 40, 40, 1);
+        margin-bottom: 50px;
+    }
+
+    &__rotated-border {
+        display: inline-block;
+        transform: rotate(15deg); /* Поворачиваем рамку */
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 20px; 
+    }
+
+    &__image-wrapper {
+        transform: rotate(-15deg); 
+        transform-origin: 50% 95%;
+    }
+
+    &__textcontent {
+        margin-top: 30px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-me3 {
+        height: 700px;
+        padding-top: 50px;
+
+        &__title {
+            font-size: 26px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: rgba(44, 40, 40, 1);
+        }
+    
+        &__rotated-border {
+            display: inline-block;
+            transform: rotate(15deg); /* Поворачиваем рамку */
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px; 
+            margin: 70px 70px 0px 0;
+        }
+    
+        &__image-wrapper {
+            transform: rotate(-15deg); 
+            transform-origin: 50% 95%;
+        }
+    
+        &__textcontent {
+            max-width: 800px;
+        }
+        &__img {
+            height: 420px;
+            width: 300px;
+        }
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .about-me3 {
+        height: 850px;
+    
+        &__rotated-border {
+            display: inline-block;
+            transform: rotate(-15deg); /* Поворачиваем рамку */
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px; 
+            margin: 20px 0px 0px 300px;
+        }
+    
+        &__image-wrapper {
+            display: block;
+            transform: rotate(15deg); 
+            transform-origin: 50% 95%;
+        }
+    
+        &__img {
+            height: 350px;
+            width: 250px;
+        }
+    
+        &__title {
+            font-size: 26px;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: "Nunito Sans", sans-serif;
+        }
+    
+        &__textcontent {
+            margin-top: 0px;
+            width: 100%;
+            max-width: 750px;
+        }
+    }
+    }
+    
+ @media (max-width: 770px) {
+     .about-me3 {
+        height: 800px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        &__rotated-border {
+            display: inline-block;
+            transform: rotate(15deg); /* Поворачиваем рамку */
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px; 
+            margin: 0px 0px 0px 32%;
+        }
+        
+        &__image-wrapper {
+            display: block;
+            transform: rotate(-15deg); 
+            transform-origin: 50% 95%;
+        }
+        
+        &__img {
+            display: block;
+            border-radius: 0px;
+            height: 350px;
+            width: 250px;
+        }
+        
+        &__title {
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 15px;
+            font-family: "Nunito Sans", sans-serif;
+        }
+        
+        &__textcontent {
+            padding: 30px;
+            width: 100%;
+        }
+    }
+}
+        
+    
+    @media (max-width: 480px) {
+        .about-me3 {
+            height: 700px;
+        
+            &__rotated-border {
+                display: inline-block;
+                transform: rotate(-15deg);
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 10px; 
+                margin: 20px 0px 0px 20%;
+            }
+        
+            &__image-wrapper {
+                display: block;
+                transform: rotate(15deg); 
+                transform-origin: 50% 95%;
+            }
+        
+            &__img {
+                height: 310px;
+                width: 220px;
+            }
+        
+            &__title {
+                font-size: 18px;
+                color: #000000;
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: "Nunito Sans", sans-serif;
+            }
+        
+            &__textcontent {
+                padding: 20px;
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+        }

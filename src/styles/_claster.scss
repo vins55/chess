@@ -1,0 +1,41 @@
+.claster {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    background: url(../images/Снимок\ экрана\ 2024-06-24\ в\ 2.18.41\ PM.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media(max-width: 992px) {
+    .claster {
+        position: relative;
+        max-width: 100%;
+        height: 750px;
+        background: url(../images/clasterrrr.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 770px) {
+    .claster {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background: url(../images/clasterrrr.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 480px) {
+    .claster {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: url(../images/clasterrrr.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+    }
+}

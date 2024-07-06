@@ -1,0 +1,228 @@
+
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/aboutchess.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+
+    &__content {
+        flex-direction: row;
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 730px;
+    }
+
+    &__text {
+         font-size: 70px;
+         font-family: "Montserrat", sans-serif;
+         font-weight: 400;
+         margin-top: 120px;
+         margin-bottom: 70px;
+    }
+
+    &__button {
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        background: rgba(44, 40, 40, 0.9);
+        padding: 15px 55px;
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 44px;
+        font-weight: 00;
+        cursor: pointer;
+    }
+    &__img {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .footer {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/aboutchess.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+    
+    
+        &__content {
+            flex-direction: row;
+            margin-top: 50px;
+            text-align: end;
+            margin-left: 0px;
+            max-width: 1000px;
+        }
+    
+        &__text {
+             font-size: 70px;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-top: 120px;
+             margin-bottom: 70px;
+        }
+    
+        &__button {
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 15px 55px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 44px;
+            font-weight: 00;
+            cursor: pointer;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        background: none;
+        width: 100%;
+        height: 700px;
+        position: relative;
+    
+        &__content {
+            flex-direction: row;
+            margin-top: 50px;
+            text-align: end;
+            margin-right: 100px;
+            margin-left: 0px;
+        }
+        
+        &__img {
+            display: block;
+            width: 100%;
+            margin: 0;
+            height: auto;
+            position: absolute;
+            top: -5vh;
+        }
+    
+        &__text {
+             font-size: 70px;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-top: 60px;
+             margin-bottom: 70px;
+        }
+    
+        &__button {
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 15px 55px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 44px;
+            font-weight: 00;
+            cursor: pointer;
+        }
+    } 
+}
+
+@media (max-width: 770px) {
+    .footer {
+        background: none;
+        width: 100%;
+        height: 700px;
+    
+        &__content {
+            flex-direction: row;
+            margin-top: 50px;
+            text-align: end;
+            margin-right: 60px;
+        }
+        
+        &__img {
+            display: block;
+            width: 100%;
+            margin: 0;
+            height: auto;
+            position: absolute;
+            top: -16vh;
+        }
+    
+        &__text {
+             font-size: 60px;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-top: 120px;
+             margin-bottom: 40px;
+        }
+    
+        &__button {
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 15px 55px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            font-weight: 00;
+            cursor: pointer;
+        }
+    } 
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        background: none;
+        width: 100%;
+        height: 650px;
+    
+        &__content {
+            flex-direction: block;
+            justify-content: center;
+            margin-top: 30px;
+            text-align: center;
+            margin-right: 0px;
+        }
+        
+        &__img {
+            display: block;
+            width: 100%;
+            margin: 0;
+            height: auto;
+            position: absolute;
+            top: -5vh;
+        }
+    
+        &__text {
+             font-size: 50px;
+             font-family: "Montserrat", sans-serif;
+             font-weight: 400;
+             margin-top: 200px;
+             margin-bottom: 30px;
+        }
+    
+        &__button {
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            background: rgba(44, 40, 40, 0.9);
+            padding: 15px 55px;
+            color: white;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            font-weight: 00;
+            cursor: pointer;
+        }
+    } 
+}
