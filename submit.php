@@ -9,7 +9,7 @@ $message = "Заявка с сайта:\nИмя: $name\nEmail: $email\nТеле�
 
 // Устанавливаем данные для отправки в Telegram API
 $telegramBotToken = 'bot7259866862:AAH9LNAQc5mluA4LybcSJQjOLKtNi33UG68';
-$telegramChatID = '906402574';
+$telegramChatID = '-1002161964893';  // Используйте полученный chat_id группы
 $telegramAPI = "https://api.telegram.org/bot$telegramBotToken/sendMessage";
 
 // Отправляем запрос в Telegram
@@ -30,5 +30,3 @@ curl_close($ch);
 header('Content-Type: application/json');
 echo json_encode(['status' => 'success', 'message' => 'Ваша заявка успешно отправлена в Telegram']);
 ?>
-
-
